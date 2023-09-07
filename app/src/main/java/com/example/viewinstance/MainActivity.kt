@@ -38,9 +38,6 @@ class MainActivity : AppCompatActivity() {
         )
 
         val adapter = Adapter { adapter, postion ->
-            recycler.viewTreeObserver.addOnGlobalLayoutListener {
-
-            }
 
             val viewType = adapter.getItemViewType(postion)
             val viewByPosition = recycler.layoutManager?.findViewByPosition(postion)
